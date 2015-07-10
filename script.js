@@ -10,12 +10,21 @@
 //   alert("You have not entered your birth date correctly.");
 // }
 
-var postalCode = prompt("Please enter your postal code.", "(xxxxx OR xxxxx-xxxx)");
+// var postalCode = prompt("Please enter your postal code.", "(xxxxx OR xxxxx-xxxx)");
+//
+// if (postalCode.length === 5) {
+//   alert("You have correctly entered your postal code!");
+// } else if (postalCode.length === 10 && postalCode[5] === "-") {
+//   alert("You have correctly entered your postal code!");
+// } else {
+//   alert("You have not entered your postal code correctly");
+// };
 
-if (postalCode.length === 5) {
-  alert("You have correctly entered your postal code!");
-} else if (postalCode.length === 10 && postalCode[5] === "-") {
-  alert("You have correctly entered your postal code!");
+var married = prompt("Are you married", "yes or no")
+var response = married.toUpperCase()
+
+if (response === "YES" || response === "NO") {
+  alert("You've answered correctly!");
 } else {
-  alert("You have not entered your postal code correctly");
-};
+  alert("You've have not entered your marital status correctly.");
+}
